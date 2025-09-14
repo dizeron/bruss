@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "771420175232",
+    "project_id": "dizeron-7433f",
+    "storage_bucket": "dizeron-7433f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771420175232:android:24001903d94dfe860a9f65",
+        "android_client_info": {
+          "package_name": "com.dizeron.brus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxx_VK9oBhOHjLzJjiDydTGPasoFxV6HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
