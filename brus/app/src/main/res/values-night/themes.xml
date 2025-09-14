@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Brus" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorOnError">@android:color/white</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Brus.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Brus.Headline2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Brus.Body</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Brus.Caption</item>
+        <item name="elevationOverlayEnabled">true</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Brus.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Brus.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Brus.LargeComponent</item>
+    </style>
+
+    <style name="Widget.Brus.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="shapeAppearance">@style/ShapeAppearance.Brus.MediumComponent</item>
+        <item name="cardBackgroundColor">@color/chat_card_dark</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+    </style>
+
+    <style name="Widget.Brus.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.Brus.SmallComponent</item>
+        <item name="boxStrokeColor">@color/primary_dark</item>
+        <item name="hintTextColor">@color/text_secondary_dark</item>
+    </style>
+
+    <style name="Widget.Brus.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/background_dark</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Brus.Headline2</item>
+        <item name="titleTextColor">@color/text_primary_dark</item>
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>

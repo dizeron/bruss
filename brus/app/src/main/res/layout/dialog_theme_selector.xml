@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Choose Theme"
+        android:textAppearance="@style/TextAppearance.Brus.Headline2"
+        android:textColor="@color/text_primary_light" />
+
+    <RadioGroup
+        android:id="@+id/theme_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radio_system_default"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:paddingStart="8dp"
+            android:text="System Default"
+            android:textAppearance="@style/TextAppearance.Brus.Body"
+            android:textColor="@color/text_primary_light"
+            app:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/radio_light_theme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="8dp"
+            android:text="Light Theme"
+            android:textAppearance="@style/TextAppearance.Brus.Body"
+            android:textColor="@color/text_primary_light"
+            app:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/radio_dark_theme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="8dp"
+            android:text="Dark Theme"
+            android:textAppearance="@style/TextAppearance.Brus.Body"
+            android:textColor="@color/text_primary_light"
+            app:buttonTint="@color/primary" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Cancel"
+            android:textColor="@color/text_secondary_light" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply_button"
+            style="@style/Widget.Brus.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply" />
+
+    </LinearLayout>
+
+</LinearLayout>

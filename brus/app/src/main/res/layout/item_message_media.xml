@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/media_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="72dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sender_avatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/secondary"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+            tools:src="@tools:sample/avatars"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bubble_incoming"
+            android:maxWidth="280dp"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="12dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/media_image"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/ShapeAppearance.Brus.SmallComponent"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_play_button"
+                android:contentDescription="Play video"
+                android:padding="12dp"
+                android:src="@drawable/ic_play"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/media_image"
+                app:layout_constraintEnd_toEndOf="@id/media_image"
+                app:layout_constraintStart_toStartOf="@id/media_image"
+                app:layout_constraintTop_toTopOf="@id/media_image"
+                app:tint="@android:color/white"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_video_duration"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:textAppearance="@style/TextAppearance.Brus.Caption"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/media_image"
+                app:layout_constraintEnd_toEndOf="@id/media_image"
+                tools:text="0:23"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/media_caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:textAppearance="@style/TextAppearance.Brus.Body"
+                android:textColor="@color/text_incoming_light"
+                android:textIsSelectable="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/media_image"
+                tools:text="Check out this amazing view!"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/media_caption">
+
+                <TextView
+                    android:id="@+id/media_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Brus.Caption"
+                    android:textColor="@color/text_caption_light"
+                    android:textSize="11sp"
+                    tools:text="12:34" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
